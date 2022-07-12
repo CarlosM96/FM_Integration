@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="felix_gtp0_synth_1" LaunchPart="xc7a200tfbg676-3" LaunchTime="1657629221">
+  <File Type="PA-TCL" Name="felix_gtp0.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="felix_gtp0_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="felix_gtp0_reports.tcl"/>
+  <File Type="RDS-RDS" Name="felix_gtp0.vds"/>
+  <File Type="RDS-UTIL" Name="felix_gtp0_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="felix_gtp0_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="felix_gtp0.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="felix_gtp0_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="felix_gtp0_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/felix_gtp0">
+    <File Path="$PPRDIR/../../../Desktop/loopback_2nd_v/loopback_2nd_v.srcs/sources_1/ip/felix_gtp0/felix_gtp0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../Desktop/loopback_2nd_v/loopback_2nd_v.srcs/sources_1/ip/felix_gtp0.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="felix_gtp0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/felix_gtp0">
+    <File Path="$PPRDIR/../../../Desktop/loopback_2nd_v/loopback_2nd_v.srcs/sources_1/ip/felix_gtp0/felix_gtp0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../Desktop/loopback_2nd_v/loopback_2nd_v.srcs/sources_1/ip/felix_gtp0.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="felix_gtp0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

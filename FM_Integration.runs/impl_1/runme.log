@@ -1,0 +1,1400 @@
+
+*** Running vivado
+    with args -log top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:22 . Memory (MB): peak = 1107.273 ; gain = 0.000
+Command: link_design -top top -part xc7a200tfbg676-3
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a200tfbg676-3
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/HP/Documents/DUNE at CERN/FM_Integration/FM_Integration.runs/impl_1/.Xil/Vivado-15220-LAPTOP-D1HA32OK/felix_gtp0/felix_gtp0.dcp' for cell 'felix_gtp_inst'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/HP/Documents/DUNE at CERN/FM_Integration/FM_Integration.runs/impl_1/.Xil/Vivado-15220-LAPTOP-D1HA32OK/ila_0/ila_0.dcp' for cell 'ila_ep'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/HP/Documents/DUNE at CERN/FullMode_Integration_Speed_3/FullMode_Integration_Speed_3.srcs/sources_1/ip/MMCM_GTP_1/MMCM_GTP.dcp' for cell 'mmcm_ep'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/HP/Documents/DUNE at CERN/FM_Integration/FM_Integration.runs/impl_1/.Xil/Vivado-15220-LAPTOP-D1HA32OK/vio_0/vio_0.dcp' for cell 'vio_ep'
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1107.273 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2229 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'daphne_ERG' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. mmcm_ep/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'mmcm_ep/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Chipscope 16-324] Core: ila_ep UUID: d3107169-666d-5160-a280-09352bb6161d 
+INFO: [Chipscope 16-324] Core: vio_ep UUID: 473e7243-8f24-5e30-bfab-b790f8c6bbf4 
+Parsing XDC File [c:/Users/HP/Documents/DUNE at CERN/FullMode_Integration_Speed_3/FullMode_Integration_Speed_3.srcs/sources_1/ip/MMCM_GTP_1/MMCM_GTP_board.xdc] for cell 'mmcm_ep/inst'
+Finished Parsing XDC File [c:/Users/HP/Documents/DUNE at CERN/FullMode_Integration_Speed_3/FullMode_Integration_Speed_3.srcs/sources_1/ip/MMCM_GTP_1/MMCM_GTP_board.xdc] for cell 'mmcm_ep/inst'
+Parsing XDC File [c:/Users/HP/Documents/DUNE at CERN/FullMode_Integration_Speed_3/FullMode_Integration_Speed_3.srcs/sources_1/ip/MMCM_GTP_1/MMCM_GTP.xdc] for cell 'mmcm_ep/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/HP/Documents/DUNE at CERN/FullMode_Integration_Speed_3/FullMode_Integration_Speed_3.srcs/sources_1/ip/MMCM_GTP_1/MMCM_GTP.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/HP/Documents/DUNE at CERN/FullMode_Integration_Speed_3/FullMode_Integration_Speed_3.srcs/sources_1/ip/MMCM_GTP_1/MMCM_GTP.xdc:57]
+get_clocks: Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 1821.230 ; gain = 630.828
+Finished Parsing XDC File [c:/Users/HP/Documents/DUNE at CERN/FullMode_Integration_Speed_3/FullMode_Integration_Speed_3.srcs/sources_1/ip/MMCM_GTP_1/MMCM_GTP.xdc] for cell 'mmcm_ep/inst'
+Parsing XDC File [c:/Users/HP/Desktop/loopback_2nd_v/loopback_2nd_v.srcs/sources_1/ip/felix_gtp0/felix_gtp0.xdc] for cell 'felix_gtp_inst/inst'
+Finished Parsing XDC File [c:/Users/HP/Desktop/loopback_2nd_v/loopback_2nd_v.srcs/sources_1/ip/felix_gtp0/felix_gtp0.xdc] for cell 'felix_gtp_inst/inst'
+Parsing XDC File [c:/Users/HP/Desktop/loopback_2nd_v/loopback_2nd_v.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila_ep/inst'
+Finished Parsing XDC File [c:/Users/HP/Desktop/loopback_2nd_v/loopback_2nd_v.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila_ep/inst'
+Parsing XDC File [c:/Users/HP/Desktop/loopback_2nd_v/loopback_2nd_v.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_ep/inst'
+Finished Parsing XDC File [c:/Users/HP/Desktop/loopback_2nd_v/loopback_2nd_v.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_ep/inst'
+Parsing XDC File [c:/Users/HP/Desktop/loopback_2nd_v/loopback_2nd_v.srcs/sources_1/ip/vio_0/vio_0.xdc] for cell 'vio_ep'
+Finished Parsing XDC File [c:/Users/HP/Desktop/loopback_2nd_v/loopback_2nd_v.srcs/sources_1/ip/vio_0/vio_0.xdc] for cell 'vio_ep'
+Parsing XDC File [C:/Users/HP/Documents/DUNE at CERN/codigo/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'adn2814_data_p'. [C:/Users/HP/Documents/DUNE at CERN/codigo/constrs_1/new/constraints.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/HP/Documents/DUNE at CERN/codigo/constrs_1/new/constraints.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adn2814_data_n'. [C:/Users/HP/Documents/DUNE at CERN/codigo/constrs_1/new/constraints.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/HP/Documents/DUNE at CERN/codigo/constrs_1/new/constraints.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adn2814_data_p'. [C:/Users/HP/Documents/DUNE at CERN/codigo/constrs_1/new/constraints.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/HP/Documents/DUNE at CERN/codigo/constrs_1/new/constraints.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adn2814_data_p'. [C:/Users/HP/Documents/DUNE at CERN/codigo/constrs_1/new/constraints.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/HP/Documents/DUNE at CERN/codigo/constrs_1/new/constraints.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/HP/Documents/DUNE at CERN/codigo/constrs_1/new/constraints.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'adn2814_clk_p'. [C:/Users/HP/Documents/DUNE at CERN/codigo/constrs_1/new/constraints.xdc:37]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports adn2814_clk_p]'. [C:/Users/HP/Documents/DUNE at CERN/codigo/constrs_1/new/constraints.xdc:37]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'adn2814_clk'. [C:/Users/HP/Documents/DUNE at CERN/codigo/constrs_1/new/constraints.xdc:38]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/HP/Documents/DUNE at CERN/codigo/constrs_1/new/constraints.xdc:38]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks adn2814_clk]'. [C:/Users/HP/Documents/DUNE at CERN/codigo/constrs_1/new/constraints.xdc:38]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [C:/Users/HP/Documents/DUNE at CERN/codigo/constrs_1/new/constraints.xdc:38]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [C:/Users/HP/Documents/DUNE at CERN/codigo/constrs_1/new/constraints.xdc:38]
+Finished Parsing XDC File [C:/Users/HP/Documents/DUNE at CERN/codigo/constrs_1/new/constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1821.230 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 97 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 96 instances
+  OBUFDS => OBUFDS: 1 instance 
+
+17 Infos, 9 Warnings, 8 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:01:58 ; elapsed = 00:02:34 . Memory (MB): peak = 1821.230 ; gain = 713.957
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Parsing TCL File [c:/Users/HP/Desktop/loopback_2nd_v/loopback_2nd_v.srcs/sources_1/ip/felix_gtp0/tcl/v7ht.tcl] from IP C:/Users/HP/Desktop/loopback_2nd_v/loopback_2nd_v.srcs/sources_1/ip/felix_gtp0/felix_gtp0.xci
+Sourcing Tcl File [c:/Users/HP/Desktop/loopback_2nd_v/loopback_2nd_v.srcs/sources_1/ip/felix_gtp0/tcl/v7ht.tcl]
+
+****************************************************************************************
+*  WARNING: This script only supports the xc7vh290t, xc7vh580t and xc7vh870t devices.  *
+*           Your current part is xc7a200t.                                            *
+****************************************************************************************
+
+Finished Sourcing Tcl File [c:/Users/HP/Desktop/loopback_2nd_v/loopback_2nd_v.srcs/sources_1/ip/felix_gtp0/tcl/v7ht.tcl]
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1821.230 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+Ending Cache Timing Information Task | Checksum: b65206a9
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1841.992 ; gain = 20.098
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.529 . Memory (MB): peak = 2128.352 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 1943512bc
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:06:03 . Memory (MB): peak = 2128.352 ; gain = 44.859
+
+Phase 2 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 13b7e8dda
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:06:11 . Memory (MB): peak = 2128.352 ; gain = 44.859
+INFO: [Opt 31-389] Phase Retarget created 615 cells and removed 623 cells
+INFO: [Opt 31-1021] In phase Retarget, 75 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 3 Constant propagation | Checksum: 10d72a27d
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:06:12 . Memory (MB): peak = 2128.352 ; gain = 44.859
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 30 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 81 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: fba9faea
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:06:15 . Memory (MB): peak = 2128.352 ; gain = 44.859
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 64 cells
+INFO: [Opt 31-1021] In phase Sweep, 2178 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 BUFG optimization
+Phase 5 BUFG optimization | Checksum: fba9faea
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:06:17 . Memory (MB): peak = 2128.352 ; gain = 44.859
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 6 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 6 Shift Register Optimization | Checksum: fba9faea
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:06:18 . Memory (MB): peak = 2128.352 ; gain = 44.859
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 7 Post Processing Netlist
+Phase 7 Post Processing Netlist | Checksum: fba9faea
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:06:18 . Memory (MB): peak = 2128.352 ; gain = 44.859
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 88 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             615  |             623  |                                             75  |
+|  Constant propagation         |               0  |              30  |                                             81  |
+|  Sweep                        |               0  |              64  |                                           2178  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             88  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.288 . Memory (MB): peak = 2128.352 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: d510c985
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:06:22 . Memory (MB): peak = 2128.352 ; gain = 44.859
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 3 BRAM(s) out of a total of 3 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 3 newly gated: 0 Total Ports: 6
+Ending PowerOpt Patch Enables Task | Checksum: 114749138
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.698 . Memory (MB): peak = 2311.430 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 114749138
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:29 . Memory (MB): peak = 2311.430 ; gain = 183.078
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 114749138
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 2311.430 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 2311.430 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1ba10076f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 2311.430 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+49 Infos, 9 Warnings, 8 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:47 ; elapsed = 00:07:31 . Memory (MB): peak = 2311.430 ; gain = 490.199
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.508 . Memory (MB): peak = 2311.430 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/HP/Documents/DUNE at CERN/FM_Integration/FM_Integration.runs/impl_1/top_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:44 ; elapsed = 00:00:34 . Memory (MB): peak = 2311.430 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
+Command: report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/HP/Documents/DUNE at CERN/FM_Integration/FM_Integration.runs/impl_1/top_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:47 ; elapsed = 00:00:34 . Memory (MB): peak = 2311.430 ; gain = 0.000
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 2311.430 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: bfa01bcb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.259 . Memory (MB): peak = 2311.430 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 2311.430 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 160ad34e8
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 2311.430 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1b01b17b1
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:49 . Memory (MB): peak = 2311.430 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1b01b17b1
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:49 . Memory (MB): peak = 2311.430 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1b01b17b1
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:49 . Memory (MB): peak = 2311.430 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1924f25e0
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:53 . Memory (MB): peak = 2311.430 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1979ba6b0
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:55 . Memory (MB): peak = 2311.430 ; gain = 0.000
+
+Phase 2.3 Global Placement Core
+
+Phase 2.3.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 17 LUTNM shape to break, 505 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 2, two critical 15, total 17, new lutff created 0
+INFO: [Physopt 32-775] End 1 Pass. Optimized 231 nets or cells. Created 17 new cells, deleted 214 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 2311.430 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           17  |            214  |                   231  |           0  |           1  |  00:00:03  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:01  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           17  |            214  |                   231  |           0  |           8  |  00:00:04  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.3.1 Physical Synthesis In Placer | Checksum: 18679596b
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:02:07 . Memory (MB): peak = 2311.430 ; gain = 0.000
+Phase 2.3 Global Placement Core | Checksum: 10e9dfe20
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:02:19 . Memory (MB): peak = 2311.430 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 10e9dfe20
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:02:19 . Memory (MB): peak = 2311.430 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: ef9678d6
+
+Time (s): cpu = 00:02:48 ; elapsed = 00:02:22 . Memory (MB): peak = 2311.430 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 20e984fe2
+
+Time (s): cpu = 00:02:54 ; elapsed = 00:02:27 . Memory (MB): peak = 2311.430 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1c7064568
+
+Time (s): cpu = 00:02:55 ; elapsed = 00:02:28 . Memory (MB): peak = 2311.430 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1894095da
+
+Time (s): cpu = 00:02:55 ; elapsed = 00:02:28 . Memory (MB): peak = 2311.430 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 269136c9e
+
+Time (s): cpu = 00:03:13 ; elapsed = 00:02:42 . Memory (MB): peak = 2311.430 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+
+Phase 3.6.1 Place Remaining
+Phase 3.6.1 Place Remaining | Checksum: 17f8b29ba
+
+Time (s): cpu = 00:04:03 ; elapsed = 00:03:41 . Memory (MB): peak = 2311.430 ; gain = 0.000
+Phase 3.6 Small Shape Detail Placement | Checksum: 17f8b29ba
+
+Time (s): cpu = 00:04:04 ; elapsed = 00:03:42 . Memory (MB): peak = 2311.430 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1ede37bb6
+
+Time (s): cpu = 00:04:14 ; elapsed = 00:03:58 . Memory (MB): peak = 2311.430 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1d466a5da
+
+Time (s): cpu = 00:04:15 ; elapsed = 00:03:59 . Memory (MB): peak = 2311.430 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 8e636c50
+
+Time (s): cpu = 00:04:50 ; elapsed = 00:04:27 . Memory (MB): peak = 2311.430 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 8e636c50
+
+Time (s): cpu = 00:04:50 ; elapsed = 00:04:28 . Memory (MB): peak = 2311.430 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: e3f65a08
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.654 | TNS=-445.142 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1c3c2546a
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2338.664 ; gain = 0.000
+INFO: [Place 46-33] Processed net daphne/adc1_adc_frame_rst, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net daphne/adc0_adc_frame_rst, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net daphne/adc2_adc_frame_rst, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net daphne/adc4_adc_frame_rst, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net daphne/adc3_adc_frame_rst, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 5 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 5, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 1211207cc
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2338.664 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: e3f65a08
+
+Time (s): cpu = 00:05:41 ; elapsed = 00:05:08 . Memory (MB): peak = 2338.664 ; gain = 27.234
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-7.468. For the most accurate timing information please run report_timing.
+
+Time (s): cpu = 00:07:34 ; elapsed = 00:07:09 . Memory (MB): peak = 2338.664 ; gain = 27.234
+Phase 4.1 Post Commit Optimization | Checksum: 17627a924
+
+Time (s): cpu = 00:07:35 ; elapsed = 00:07:09 . Memory (MB): peak = 2338.664 ; gain = 27.234
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 17627a924
+
+Time (s): cpu = 00:07:36 ; elapsed = 00:07:11 . Memory (MB): peak = 2338.664 ; gain = 27.234
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                1x1|
+|___________|___________________|___________________|
+|      South|                1x1|                2x2|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 17627a924
+
+Time (s): cpu = 00:07:37 ; elapsed = 00:07:12 . Memory (MB): peak = 2338.664 ; gain = 27.234
+Phase 4.3 Placer Reporting | Checksum: 17627a924
+
+Time (s): cpu = 00:07:38 ; elapsed = 00:07:12 . Memory (MB): peak = 2338.664 ; gain = 27.234
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.358 . Memory (MB): peak = 2338.664 ; gain = 0.000
+
+Time (s): cpu = 00:07:38 ; elapsed = 00:07:13 . Memory (MB): peak = 2338.664 ; gain = 27.234
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2649a6f9e
+
+Time (s): cpu = 00:07:39 ; elapsed = 00:07:14 . Memory (MB): peak = 2338.664 ; gain = 27.234
+Ending Placer Task | Checksum: 1dbf2e17a
+
+Time (s): cpu = 00:07:39 ; elapsed = 00:07:14 . Memory (MB): peak = 2338.664 ; gain = 27.234
+INFO: [Common 17-83] Releasing license: Implementation
+95 Infos, 9 Warnings, 8 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:07:53 ; elapsed = 00:07:23 . Memory (MB): peak = 2338.664 ; gain = 27.234
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:36 ; elapsed = 00:00:17 . Memory (MB): peak = 2338.664 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/HP/Documents/DUNE at CERN/FM_Integration/FM_Integration.runs/impl_1/top_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:43 ; elapsed = 00:00:25 . Memory (MB): peak = 2338.664 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.426 . Memory (MB): peak = 2338.664 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_placed.rpt -pb top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.425 . Memory (MB): peak = 2338.664 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 2338.664 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.468 | TNS=-434.873 |
+Phase 1 Physical Synthesis Initialization | Checksum: 2108a2849
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:25 . Memory (MB): peak = 2356.824 ; gain = 18.160
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.468 | TNS=-434.873 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 2108a2849
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:25 . Memory (MB): peak = 2356.824 ; gain = 18.160
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.468 | TNS=-434.873 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][41]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net felix_gtp_inst/inst/gt_usrclk_source/txoutclk_mmcm0_i/clkout0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[3]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[3]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[3]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[3]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[3]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.409 | TNS=-434.084 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][43]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[5]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[5]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[5]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[5]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[5]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.393 | TNS=-433.245 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][42]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[5]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[5]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[4]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[4]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[5]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.356 | TNS=-432.585 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][40]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[3]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[3]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[2]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[2]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[3]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.915 | TNS=-431.797 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][56]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[18]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[18]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[18]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[18]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[18]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.816 | TNS=-431.665 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][57]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[19]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[19]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[19]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[19]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[19]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.796 | TNS=-431.645 |
+INFO: [Physopt 32-572] Net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-663] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0.  Re-placed instance FullMode_box_single/data_to_GTP[25]_INST_0_i_2
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.733 | TNS=-430.503 |
+INFO: [Physopt 32-663] Processed net FullMode_box_single/data_to_GTP[5]_INST_0_i_1_n_0.  Re-placed instance FullMode_box_single/data_to_GTP[5]_INST_0_i_1_comp_1
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[5]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.726 | TNS=-430.407 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][59]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[21]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[21]_INST_0_i_1
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[21]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.702 | TNS=-430.198 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][60]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[22]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[22]_INST_0_i_1
+INFO: [Physopt 32-702] Processed net FullMode_box_single/data_to_GTP[22]_INST_0_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net FullMode_box_single/FMSC_stream_controller_ign was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_stream_controller_ign.  Did not re-place instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[22]_INST_0_i_1_n_0. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[22]_INST_0_i_1_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_stream_controller_ign. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.695 | TNS=-430.185 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][63]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[25]_INST_0_i_1
+INFO: [Physopt 32-702] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net FullMode_box_single/FMSC_stream_controller_ign was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_stream_controller_ign.  Did not re-place instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_1_n_0. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[25]_INST_0_i_1_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_stream_controller_ign. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.643 | TNS=-430.183 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[5]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[5]_INST_0_i_1_comp_1
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[4]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[4]_INST_0_comp_1.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[5]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.633 | TNS=-429.834 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][39]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[25]_INST_0_i_2
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[1]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[1]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.610 | TNS=-429.345 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[25]_INST_0_i_2
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[18]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[18]_INST_0_comp_1.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.592 | TNS=-429.037 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[25]_INST_0_i_2
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[25]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[25]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.589 | TNS=-429.048 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[25]_INST_0_i_2
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[22]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[22]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.587 | TNS=-428.890 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_1.  Did not re-place instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1_comp_1
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[25]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.579 | TNS=-428.614 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[25]_INST_0_i_2
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[19]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[19]_INST_0_comp_1.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.576 | TNS=-428.453 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][51]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullMode_box_single/data_to_GTP[13]_INST_0_i_1_n_0.  Re-placed instance FullMode_box_single/data_to_GTP[13]_INST_0_i_1
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[13]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.525 | TNS=-428.333 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[21]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[21]_INST_0_i_1
+INFO: [Physopt 32-702] Processed net FullMode_box_single/data_to_GTP[21]_INST_0_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net FullMode_box_single/FMSC_stream_controller_ign was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_stream_controller_ign.  Did not re-place instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[21]_INST_0_i_1_n_0. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[21]_INST_0_i_1_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_stream_controller_ign. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.503 | TNS=-428.368 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][55]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[17]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[17]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[17]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[17]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[17]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.502 | TNS=-428.331 |
+INFO: [Physopt 32-663] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_2.  Re-placed instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1_comp_2
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.489 | TNS=-428.314 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[25]_INST_0_i_2
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[3]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[3]_INST_0_comp_1.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.481 | TNS=-428.295 |
+INFO: [Physopt 32-572] Net FullMode_box_single/FMSC_stream_controller_ign was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_stream_controller_ign.  Did not re-place instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FMSC_stream_controller_ign. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.481 | TNS=-427.982 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[25]_INST_0_i_2
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[21]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[21]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.466 | TNS=-427.950 |
+INFO: [Physopt 32-663] Processed net FullMode_box_single/data_to_GTP[17]_INST_0_i_1_n_0.  Re-placed instance FullMode_box_single/data_to_GTP[17]_INST_0_i_1_comp
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[17]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.459 | TNS=-427.514 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[13]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[13]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[13]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[13]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[13]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.451 | TNS=-427.428 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][50]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[12]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[12]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[12]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[12]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[12]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.433 | TNS=-427.297 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_2.  Did not re-place instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1_comp_2
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[21]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.430 | TNS=-427.028 |
+INFO: [Physopt 32-663] Processed net FullMode_box_single/data_to_GTP[19]_INST_0_i_1_n_0.  Re-placed instance FullMode_box_single/data_to_GTP[19]_INST_0_i_1_comp
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[19]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.427 | TNS=-426.900 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[5]_INST_0_i_1_n_0_repN.  Did not re-place instance FullMode_box_single/data_to_GTP[5]_INST_0_i_1_comp
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[5]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[5]_INST_0_comp_1.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[5]_INST_0_i_1_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.415 | TNS=-426.847 |
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[22]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.401 | TNS=-426.656 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][54]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[16]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[16]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[16]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[16]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[16]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.374 | TNS=-426.612 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[25]_INST_0_i_2
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[2]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[2]_INST_0_comp_1.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.373 | TNS=-426.516 |
+INFO: [Physopt 32-663] Processed net FullMode_box_single/data_to_GTP[13]_INST_0_i_1_n_0.  Re-placed instance FullMode_box_single/data_to_GTP[13]_INST_0_i_1_comp
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[13]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.367 | TNS=-426.266 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[25]_INST_0_i_2
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[5]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[5]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.357 | TNS=-426.124 |
+INFO: [Physopt 32-663] Processed net FullMode_box_single/data_to_GTP[16]_INST_0_i_1_n_0.  Re-placed instance FullMode_box_single/data_to_GTP[16]_INST_0_i_1_comp
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[16]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.338 | TNS=-425.789 |
+INFO: [Physopt 32-663] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][65].  Re-placed instance ila_ep/inst/PROBE_PIPE.shift_probes_reg[0][65]
+INFO: [Physopt 32-735] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][65]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.332 | TNS=-425.740 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][52]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[14]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[14]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[14]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[14]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[14]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.330 | TNS=-425.666 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][53]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[15]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[15]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[15]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[15]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[15]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.325 | TNS=-425.609 |
+INFO: [Physopt 32-662] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][38].  Did not re-place instance ila_ep/inst/PROBE_PIPE.shift_probes_reg[0][38]
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][38]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[0].  Did not re-place instance FullMode_box_single/data_to_GTP[0]_INST_0
+INFO: [Physopt 32-571] Net FullMode_box_single/data_to_GTP[0] was not replicated.
+INFO: [Physopt 32-702] Processed net FullMode_box_single/data_to_GTP[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullMode_box_single/FMSC_dtd[1].  Re-placed instance FullMode_box_single/FMSC_dtd_reg[1]
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_dtd[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.320 | TNS=-424.934 |
+INFO: [Physopt 32-663] Processed net FullMode_box_single/data_to_GTP[12]_INST_0_i_1_n_0.  Re-placed instance FullMode_box_single/data_to_GTP[12]_INST_0_i_1_comp
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[12]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.320 | TNS=-424.844 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0_repN.  Did not re-place instance FullMode_box_single/data_to_GTP[25]_INST_0_i_2_comp
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[18]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[18]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.313 | TNS=-424.759 |
+INFO: [Physopt 32-702] Processed net FullMode_box_single/data_to_GTP[25]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullMode_box_single/fsm_state[2].  Re-placed instance FullMode_box_single/FSM_sequential_fsm_state_reg[2]
+INFO: [Physopt 32-735] Processed net FullMode_box_single/fsm_state[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.302 | TNS=-424.819 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[19]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[19]_INST_0_i_1_comp
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[19]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-424.739 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_dtd[1].  Did not re-place instance FullMode_box_single/FMSC_dtd_reg[1]
+INFO: [Physopt 32-572] Net FullMode_box_single/FMSC_dtd[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FMSC_dtd[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net daphne/FIFO_DUALCLOCK_MACRO_4/gearbox_14_324_wrcount[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net FullMode_box_single/FMSC_crc_control_fifo_re was not replicated.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_crc_control_fifo_re.  Did not re-place instance FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_2
+INFO: [Physopt 32-710] Processed net FullMode_box_single/FIFO_re_OUT[4]. Critical path length was reduced through logic transformation on cell FullMode_box_single/FIFO_re_OUT[4]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_crc_control_fifo_re. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-424.400 |
+INFO: [Physopt 32-702] Processed net daphne/FIFO_DUALCLOCK_MACRO_6/gearbox_14_326_wrcount[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net FullMode_box_single/FMSC_crc_control_fifo_re was not replicated.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_crc_control_fifo_re.  Did not re-place instance FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_2
+INFO: [Physopt 32-710] Processed net FullMode_box_single/FIFO_re_OUT[6]. Critical path length was reduced through logic transformation on cell FullMode_box_single/FIFO_re_OUT[6]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_crc_control_fifo_re. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-424.061 |
+INFO: [Physopt 32-702] Processed net daphne/FIFO_DUALCLOCK_MACRO_13/gearbox_14_3213_wrcount[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net FullMode_box_single/FMSC_crc_control_fifo_re was not replicated.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_crc_control_fifo_re.  Did not re-place instance FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_2
+INFO: [Physopt 32-710] Processed net FullMode_box_single/FIFO_re_OUT[13]. Critical path length was reduced through logic transformation on cell FullMode_box_single/FIFO_re_OUT[13]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_crc_control_fifo_re. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-423.700 |
+INFO: [Physopt 32-702] Processed net daphne/FIFO_DUALCLOCK_MACRO_7/gearbox_14_327_wrcount[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net FullMode_box_single/FMSC_crc_control_fifo_re was not replicated.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_crc_control_fifo_re.  Did not re-place instance FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_2
+INFO: [Physopt 32-710] Processed net FullMode_box_single/FIFO_re_OUT[7]. Critical path length was reduced through logic transformation on cell FullMode_box_single/FIFO_re_OUT[7]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_crc_control_fifo_re. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-423.412 |
+INFO: [Physopt 32-702] Processed net daphne/FIFO_DUALCLOCK_MACRO_5/gearbox_14_325_wrcount[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net FullMode_box_single/FMSC_crc_control_fifo_re was not replicated.
+INFO: [Physopt 32-663] Processed net FullMode_box_single/FMSC_crc_control_fifo_re.  Re-placed instance FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_2
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_crc_control_fifo_re. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-423.230 |
+INFO: [Physopt 32-571] Net FullMode_box_single/FMSC_crc_control_fifo_re was not replicated.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_crc_control_fifo_re.  Did not re-place instance FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_2
+INFO: [Physopt 32-710] Processed net FullMode_box_single/FIFO_re_OUT[5]. Critical path length was reduced through logic transformation on cell FullMode_box_single/FIFO_re_OUT[5]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_crc_control_fifo_re. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-422.887 |
+INFO: [Physopt 32-702] Processed net daphne/FIFO_DUALCLOCK_MACRO_9/gearbox_14_329_wrcount[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net FullMode_box_single/FMSC_crc_control_fifo_re was not replicated.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_crc_control_fifo_re.  Did not re-place instance FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_2
+INFO: [Physopt 32-710] Processed net FullMode_box_single/FIFO_re_OUT[9]. Critical path length was reduced through logic transformation on cell FullMode_box_single/FIFO_re_OUT[9]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_crc_control_fifo_re. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-422.293 |
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_19_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-420.392 |
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_18_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-419.218 |
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_17_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-417.704 |
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullMode_box_single/FIFO_re_OUT[4].  Re-placed instance FullMode_box_single/FIFO_re_OUT[4]_INST_0_comp
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FIFO_re_OUT[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-417.506 |
+INFO: [Physopt 32-702] Processed net daphne/FIFO_DUALCLOCK_MACRO_1/gearbox_14_321_wrcount[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net FullMode_box_single/FMSC_crc_control_fifo_re was not replicated.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_crc_control_fifo_re.  Did not re-place instance FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_2
+INFO: [Physopt 32-710] Processed net FullMode_box_single/FIFO_re_OUT[1]. Critical path length was reduced through logic transformation on cell FullMode_box_single/FIFO_re_OUT[1]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_crc_control_fifo_re. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-417.166 |
+INFO: [Physopt 32-702] Processed net daphne/FIFO_DUALCLOCK_MACRO_10/gearbox_14_3210_wrcount[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net FullMode_box_single/FMSC_crc_control_fifo_re was not replicated.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_crc_control_fifo_re.  Did not re-place instance FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_2
+INFO: [Physopt 32-710] Processed net FullMode_box_single/FIFO_re_OUT[10]. Critical path length was reduced through logic transformation on cell FullMode_box_single/FIFO_re_OUT[10]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_crc_control_fifo_re. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-416.809 |
+INFO: [Physopt 32-663] Processed net FullMode_box_single/FIFO_re_OUT[6].  Re-placed instance FullMode_box_single/FIFO_re_OUT[6]_INST_0_comp
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FIFO_re_OUT[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-416.652 |
+INFO: [Physopt 32-702] Processed net daphne/FIFO_DUALCLOCK_MACRO_11/gearbox_14_3211_wrcount[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net FullMode_box_single/FMSC_crc_control_fifo_re was not replicated.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_crc_control_fifo_re.  Did not re-place instance FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_2
+INFO: [Physopt 32-710] Processed net FullMode_box_single/FIFO_re_OUT[11]. Critical path length was reduced through logic transformation on cell FullMode_box_single/FIFO_re_OUT[11]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_crc_control_fifo_re. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-416.316 |
+INFO: [Physopt 32-702] Processed net daphne/FIFO_DUALCLOCK_MACRO_3/gearbox_14_323_wrcount[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net FullMode_box_single/FMSC_crc_control_fifo_re was not replicated.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_crc_control_fifo_re.  Did not re-place instance FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_2
+INFO: [Physopt 32-710] Processed net FullMode_box_single/FIFO_re_OUT[3]. Critical path length was reduced through logic transformation on cell FullMode_box_single/FIFO_re_OUT[3]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_crc_control_fifo_re. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-415.991 |
+INFO: [Physopt 32-702] Processed net daphne/FIFO_DUALCLOCK_MACRO_2/gearbox_14_322_wrcount[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net FullMode_box_single/FMSC_crc_control_fifo_re was not replicated.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_crc_control_fifo_re.  Did not re-place instance FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_2
+INFO: [Physopt 32-710] Processed net FullMode_box_single/FIFO_re_OUT[2]. Critical path length was reduced through logic transformation on cell FullMode_box_single/FIFO_re_OUT[2]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_crc_control_fifo_re. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-415.639 |
+INFO: [Physopt 32-663] Processed net FullMode_box_single/FIFO_re_OUT[7].  Re-placed instance FullMode_box_single/FIFO_re_OUT[7]_INST_0_comp
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FIFO_re_OUT[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-415.590 |
+INFO: [Physopt 32-663] Processed net FullMode_box_single/FIFO_re_OUT[4].  Re-placed instance FullMode_box_single/FIFO_re_OUT[4]_INST_0_comp
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FIFO_re_OUT[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-415.586 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FIFO_re_OUT[4].  Did not re-place instance FullMode_box_single/FIFO_re_OUT[4]_INST_0_comp
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FIFO_re_OUT[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net daphne/FIFO_DUALCLOCK_MACRO_7/fifo_empty[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][38].  Did not re-place instance ila_ep/inst/PROBE_PIPE.shift_probes_reg[0][38]
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][38]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net felix_gtp_inst/inst/gt_usrclk_source/txoutclk_mmcm0_i/clkout0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_stream_controller_ign.  Did not re-place instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FMSC_stream_controller_ign. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[0].  Did not re-place instance FullMode_box_single/data_to_GTP[0]_INST_0
+INFO: [Physopt 32-702] Processed net FullMode_box_single/data_to_GTP[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_dtd[1].  Did not re-place instance FullMode_box_single/FMSC_dtd_reg[1]
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FMSC_dtd[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net daphne/FIFO_DUALCLOCK_MACRO_4/gearbox_14_324_wrcount[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FIFO_re_OUT[4].  Did not re-place instance FullMode_box_single/FIFO_re_OUT[4]_INST_0_comp
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FIFO_re_OUT[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net daphne/FIFO_DUALCLOCK_MACRO_7/fifo_empty[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-415.586 |
+Phase 3 Critical Path Optimization | Checksum: 2108a2849
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:01:03 . Memory (MB): peak = 2366.773 ; gain = 28.109
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.298 | TNS=-415.586 |
+INFO: [Physopt 32-662] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][38].  Did not re-place instance ila_ep/inst/PROBE_PIPE.shift_probes_reg[0][38]
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][38]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net felix_gtp_inst/inst/gt_usrclk_source/txoutclk_mmcm0_i/clkout0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net FullMode_box_single/FMSC_stream_controller_ign was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_stream_controller_ign.  Did not re-place instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[0]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[0]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_stream_controller_ign. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.292 | TNS=-415.453 |
+INFO: [Physopt 32-662] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][44].  Did not re-place instance ila_ep/inst/PROBE_PIPE.shift_probes_reg[0][44]
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][44]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net FullMode_box_single/FMSC_stream_controller_ign was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_stream_controller_ign.  Did not re-place instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[6]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[6]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_stream_controller_ign. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.292 | TNS=-415.438 |
+INFO: [Physopt 32-662] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][62].  Did not re-place instance ila_ep/inst/PROBE_PIPE.shift_probes_reg[0][62]
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][62]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net FullMode_box_single/FMSC_stream_controller_ign was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_stream_controller_ign.  Did not re-place instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[24]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[24]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_stream_controller_ign. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.274 | TNS=-415.306 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][63]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_1_n_0.  Re-placed instance FullMode_box_single/data_to_GTP[25]_INST_0_i_1_comp
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.273 | TNS=-415.203 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][53]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullMode_box_single/data_to_GTP[15]_INST_0_i_1_n_0.  Re-placed instance FullMode_box_single/data_to_GTP[15]_INST_0_i_1_comp
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[15]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.273 | TNS=-415.023 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][60]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullMode_box_single/data_to_GTP[22]_INST_0_i_1_n_0.  Re-placed instance FullMode_box_single/data_to_GTP[22]_INST_0_i_1_comp
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[22]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.270 | TNS=-414.883 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][40]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net FullMode_box_single/FMSC_stream_controller_ign was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_stream_controller_ign.  Did not re-place instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[2]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[2]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_stream_controller_ign. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.270 | TNS=-414.937 |
+INFO: [Physopt 32-662] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][65].  Did not re-place instance ila_ep/inst/PROBE_PIPE.shift_probes_reg[0][65]
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][65]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net FullMode_box_single/FMSC_stream_controller_ign was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_stream_controller_ign.  Did not re-place instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[27]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[27]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_stream_controller_ign. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.263 | TNS=-414.895 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][45]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net FullMode_box_single/FMSC_stream_controller_ign. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_stream_controller_ign. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.258 | TNS=-414.914 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][52]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullMode_box_single/data_to_GTP[14]_INST_0_i_1_n_0.  Re-placed instance FullMode_box_single/data_to_GTP[14]_INST_0_i_1_comp
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[14]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.253 | TNS=-414.768 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][42]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0.  Re-placed instance FullMode_box_single/data_to_GTP[25]_INST_0_i_2
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.251 | TNS=-414.754 |
+INFO: [Physopt 32-663] Processed net FullMode_box_single/data_to_GTP[3]_INST_0_i_1_n_0.  Re-placed instance FullMode_box_single/data_to_GTP[3]_INST_0_i_1_comp_1
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[3]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.239 | TNS=-414.713 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[25]_INST_0_i_2
+INFO: [Physopt 32-710] Processed net FullMode_box_single/data_to_GTP[4]. Critical path length was reduced through logic transformation on cell FullMode_box_single/data_to_GTP[4]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.235 | TNS=-414.602 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][56]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[18]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[18]_INST_0_i_1_comp
+INFO: [Physopt 32-702] Processed net FullMode_box_single/data_to_GTP[18]_INST_0_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[18]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.233 | TNS=-414.518 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][43]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-601] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_9. Net driver FullMode_box_single/data_to_GTP[31]_INST_0_i_1_replica was replaced.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_9. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.228 | TNS=-413.006 |
+INFO: [Physopt 32-663] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_4.  Re-placed instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1_comp_4
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_4. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.226 | TNS=-412.992 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][59]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullMode_box_single/data_to_GTP[21]_INST_0_i_1_n_0.  Re-placed instance FullMode_box_single/data_to_GTP[21]_INST_0_i_1_comp
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[21]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.222 | TNS=-412.890 |
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][57]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[19]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[19]_INST_0_i_1_comp
+INFO: [Physopt 32-702] Processed net FullMode_box_single/data_to_GTP[19]_INST_0_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[19]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.214 | TNS=-412.868 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_4.  Did not re-place instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1_comp_4
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullMode_box_single/data_to_GTP[6].  Re-placed instance FullMode_box_single/data_to_GTP[6]_INST_0_comp
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.210 | TNS=-412.799 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[3]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[3]_INST_0_i_1_comp_1
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[3]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.203 | TNS=-412.755 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_8.  Did not re-place instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1_comp_8
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_8. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.200 | TNS=-412.749 |
+INFO: [Physopt 32-663] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0_repN_3.  Re-placed instance FullMode_box_single/data_to_GTP[25]_INST_0_i_2_comp_3
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0_repN_3. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.197 | TNS=-412.711 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_8.  Did not re-place instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1_comp_8
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_8. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.182 | TNS=-412.677 |
+INFO: [Physopt 32-663] Processed net FullMode_box_single/data_to_GTP[7]_INST_0_i_1_n_0.  Re-placed instance FullMode_box_single/data_to_GTP[7]_INST_0_i_1
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[7]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.171 | TNS=-412.632 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[25]_INST_0_i_1_comp
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.166 | TNS=-412.580 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[3]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[3]_INST_0_i_1_comp_1
+INFO: [Physopt 32-702] Processed net FullMode_box_single/data_to_GTP[3]_INST_0_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.163 | TNS=-412.393 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_8.  Did not re-place instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1_comp_8
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_8. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullMode_box_single/data_to_GTP[27].  Re-placed instance FullMode_box_single/data_to_GTP[27]_INST_0_comp
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[27]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.162 | TNS=-412.332 |
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[19]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.147 | TNS=-412.313 |
+INFO: [Physopt 32-572] Net FullMode_box_single/FMSC_stream_controller_ign_repN_9 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_9.  Did not re-place instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1_replica
+INFO: [Physopt 32-81] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_9. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_9. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.147 | TNS=-412.300 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[6].  Did not re-place instance FullMode_box_single/data_to_GTP[6]_INST_0_comp
+INFO: [Physopt 32-571] Net FullMode_box_single/data_to_GTP[6] was not replicated.
+INFO: [Physopt 32-702] Processed net FullMode_box_single/data_to_GTP[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/fsm_state[2].  Did not re-place instance FullMode_box_single/FSM_sequential_fsm_state_reg[2]
+INFO: [Physopt 32-81] Processed net FullMode_box_single/fsm_state[2]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/fsm_state[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.146 | TNS=-411.991 |
+INFO: [Physopt 32-662] Processed net FullMode_box_single/data_to_GTP[5]_INST_0_i_1_n_0.  Did not re-place instance FullMode_box_single/data_to_GTP[5]_INST_0_i_1_comp_2
+INFO: [Physopt 32-702] Processed net FullMode_box_single/data_to_GTP[5]_INST_0_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.142 | TNS=-411.789 |
+INFO: [Common 17-14] Message 'Physopt 32-619' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-663] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0_repN.  Re-placed instance FullMode_box_single/data_to_GTP[25]_INST_0_i_2_comp_7
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[25]_INST_0_i_2_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_5.  Did not re-place instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1_comp_5
+INFO: [Physopt 32-735] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_5. Optimization improves timing on the net.
+INFO: [Physopt 32-572] Net FullMode_box_single/FMSC_stream_controller_ign_repN_9 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_9.  Did not re-place instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1_replica
+INFO: [Physopt 32-572] Net FullMode_box_single/FMSC_stream_controller_ign_repN_9 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_9. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net FullMode_box_single/data_to_GTP[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-702] Processed net FullMode_box_single/data_to_GTP[19]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/fsm_state[2].  Did not re-place instance FullMode_box_single/FSM_sequential_fsm_state_reg[2]
+INFO: [Physopt 32-702] Processed net FullMode_box_single/fsm_state[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net daphne/FIFO_DUALCLOCK_MACRO_4/gearbox_14_324_wrcount[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FIFO_re_OUT[4].  Did not re-place instance FullMode_box_single/FIFO_re_OUT[4]_INST_0_comp
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FIFO_re_OUT[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net daphne/FIFO_DUALCLOCK_MACRO_7/fifo_empty[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ila_ep/inst/PROBE_PIPE.shift_probes[0][57]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net felix_gtp_inst/inst/gt_usrclk_source/txoutclk_mmcm0_i/clkout0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_9.  Did not re-place instance FullMode_box_single/data_to_GTP[31]_INST_0_i_1_replica
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FMSC_stream_controller_ign_repN_9. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullMode_box_single/data_to_GTP[19]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/fsm_state[2].  Did not re-place instance FullMode_box_single/FSM_sequential_fsm_state_reg[2]
+INFO: [Physopt 32-702] Processed net FullMode_box_single/fsm_state[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net daphne/FIFO_DUALCLOCK_MACRO_4/gearbox_14_324_wrcount[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FIFO_re_OUT[39]_INST_0_i_19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net FullMode_box_single/FIFO_re_OUT[4].  Did not re-place instance FullMode_box_single/FIFO_re_OUT[4]_INST_0_comp
+INFO: [Physopt 32-702] Processed net FullMode_box_single/FIFO_re_OUT[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net daphne/FIFO_DUALCLOCK_MACRO_7/fifo_empty[0]. Optimizations did not improve timing on the net.
+Phase 4 Critical Path Optimization | Checksum: 2108a2849
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:01:24 . Memory (MB): peak = 2366.773 ; gain = 28.109
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.168 . Memory (MB): peak = 2366.773 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-6.134 | TNS=-411.525 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          1.334  |         23.348  |            6  |              0  |                    98  |           0  |           2  |  00:00:59  |
+|  Total          |          1.334  |         23.348  |            6  |              0  |                    98  |           0  |           3  |  00:00:59  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 2366.773 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 1844e1f7b
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:01:25 . Memory (MB): peak = 2366.773 ; gain = 28.109
+INFO: [Common 17-83] Releasing license: Implementation
+599 Infos, 9 Warnings, 8 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:02:34 ; elapsed = 00:01:55 . Memory (MB): peak = 2366.773 ; gain = 28.109
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:36 ; elapsed = 00:00:17 . Memory (MB): peak = 2366.773 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/HP/Documents/DUNE at CERN/FM_Integration/FM_Integration.runs/impl_1/top_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:42 ; elapsed = 00:00:24 . Memory (MB): peak = 2366.773 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 8cf4d3e5 ConstDB: 0 ShapeSum: 2e2fee86 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1528c77a9
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:03:15 . Memory (MB): peak = 2540.363 ; gain = 164.891
+Post Restoration Checksum: NetGraph: e7ded7eb NumContArr: 6aad9fbe Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1528c77a9
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:03:17 . Memory (MB): peak = 2540.363 ; gain = 164.891
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1528c77a9
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:03:18 . Memory (MB): peak = 2546.207 ; gain = 170.734
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1528c77a9
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:03:18 . Memory (MB): peak = 2546.207 ; gain = 170.734
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1e3a82e03
+
+Time (s): cpu = 00:04:44 ; elapsed = 00:04:17 . Memory (MB): peak = 2586.055 ; gain = 210.582
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.101 | TNS=-406.570| WHS=-0.546 | THS=-333.806|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 23c854d8c
+
+Time (s): cpu = 00:05:14 ; elapsed = 00:04:37 . Memory (MB): peak = 2586.055 ; gain = 210.582
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.101 | TNS=-405.381| WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 160c4052e
+
+Time (s): cpu = 00:05:14 ; elapsed = 00:04:37 . Memory (MB): peak = 2591.113 ; gain = 215.641
+Phase 2 Router Initialization | Checksum: 1ff4e0acb
+
+Time (s): cpu = 00:05:14 ; elapsed = 00:04:37 . Memory (MB): peak = 2591.113 ; gain = 215.641
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 34101
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 34100
+  Number of Partially Routed Nets     = 1
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 1ff4e0acb
+
+Time (s): cpu = 00:05:16 ; elapsed = 00:04:39 . Memory (MB): peak = 2597.492 ; gain = 222.020
+Phase 3 Initial Routing | Checksum: 19de627e5
+
+Time (s): cpu = 00:05:48 ; elapsed = 00:04:58 . Memory (MB): peak = 2609.047 ; gain = 233.574
+INFO: [Route 35-580] Design has 1 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|        clk_out2_MMCM_GTP |        clk_out1_MMCM_GTP |                                                          ila_ep/inst/PROBE_PIPE.shift_probes_reg[0][71]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2932
+ Number of Nodes with overlaps = 136
+ Number of Nodes with overlaps = 38
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.751 | TNS=-416.325| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 25c91b555
+
+Time (s): cpu = 00:07:32 ; elapsed = 00:06:35 . Memory (MB): peak = 2609.047 ; gain = 233.574
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 64
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.518 | TNS=-413.249| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: a902ca64
+
+Time (s): cpu = 00:07:43 ; elapsed = 00:06:47 . Memory (MB): peak = 2609.344 ; gain = 233.871
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.716 | TNS=-415.588| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 140934181
+
+Time (s): cpu = 00:07:49 ; elapsed = 00:06:53 . Memory (MB): peak = 2609.344 ; gain = 233.871
+Phase 4 Rip-up And Reroute | Checksum: 140934181
+
+Time (s): cpu = 00:07:49 ; elapsed = 00:06:53 . Memory (MB): peak = 2609.344 ; gain = 233.871
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 135811385
+
+Time (s): cpu = 00:07:57 ; elapsed = 00:06:58 . Memory (MB): peak = 2609.344 ; gain = 233.871
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.518 | TNS=-411.998| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 9a7278b4
+
+Time (s): cpu = 00:08:11 ; elapsed = 00:07:07 . Memory (MB): peak = 2618.395 ; gain = 242.922
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 9a7278b4
+
+Time (s): cpu = 00:08:11 ; elapsed = 00:07:08 . Memory (MB): peak = 2618.395 ; gain = 242.922
+Phase 5 Delay and Skew Optimization | Checksum: 9a7278b4
+
+Time (s): cpu = 00:08:12 ; elapsed = 00:07:08 . Memory (MB): peak = 2618.395 ; gain = 242.922
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 985a45bb
+
+Time (s): cpu = 00:08:19 ; elapsed = 00:07:14 . Memory (MB): peak = 2618.395 ; gain = 242.922
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.492 | TNS=-411.539| WHS=-0.546 | THS=-1.084 |
+
+
+Phase 6.1.2 Lut RouteThru Assignment for hold
+Phase 6.1.2 Lut RouteThru Assignment for hold | Checksum: 14221d86e
+
+Time (s): cpu = 00:08:23 ; elapsed = 00:07:17 . Memory (MB): peak = 2618.395 ; gain = 242.922
+Phase 6.1 Hold Fix Iter | Checksum: 14221d86e
+
+Time (s): cpu = 00:08:23 ; elapsed = 00:07:18 . Memory (MB): peak = 2618.395 ; gain = 242.922
+
+Phase 6.2 Additional Hold Fix
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.492 | TNS=-411.539| WHS=-0.546 | THS=-1.084 |
+
+Phase 6.2 Additional Hold Fix | Checksum: 16da15261
+
+Time (s): cpu = 00:08:33 ; elapsed = 00:07:26 . Memory (MB): peak = 2618.395 ; gain = 242.922
+Phase 6 Post Hold Fix | Checksum: c251a171
+
+Time (s): cpu = 00:08:38 ; elapsed = 00:07:31 . Memory (MB): peak = 2618.395 ; gain = 242.922
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 3.12447 %
+  Global Horizontal Routing Utilization  = 3.79802 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 62.1622%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 69.3694%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 80.8824%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 66.1765%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 129122cac
+
+Time (s): cpu = 00:08:39 ; elapsed = 00:07:32 . Memory (MB): peak = 2618.395 ; gain = 242.922
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 129122cac
+
+Time (s): cpu = 00:08:40 ; elapsed = 00:07:32 . Memory (MB): peak = 2618.395 ; gain = 242.922
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1a17c5865
+
+Time (s): cpu = 00:08:54 ; elapsed = 00:07:53 . Memory (MB): peak = 2618.395 ; gain = 242.922
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin ila_ep/inst/PROBE_PIPE.shift_probes_reg[0][70]/D driven by global clock buffer BUFGCTRL_X0Y4.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin ila_ep/inst/PROBE_PIPE.shift_probes_reg[0][71]/D driven by global clock buffer BUFGCTRL_X0Y9.
+Resolution: Run report_timing_summary to analyze the hold violations.
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 1bb6ea63a
+
+Time (s): cpu = 00:09:02 ; elapsed = 00:07:58 . Memory (MB): peak = 2618.395 ; gain = 242.922
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-6.492 | TNS=-411.539| WHS=-0.546 | THS=-1.084 |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 1bb6ea63a
+
+Time (s): cpu = 00:09:02 ; elapsed = 00:07:59 . Memory (MB): peak = 2618.395 ; gain = 242.922
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:09:03 ; elapsed = 00:07:59 . Memory (MB): peak = 2618.395 ; gain = 242.922
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+621 Infos, 12 Warnings, 8 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:10:04 ; elapsed = 00:08:38 . Memory (MB): peak = 2618.395 ; gain = 251.621
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:42 ; elapsed = 00:00:21 . Memory (MB): peak = 2618.395 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/HP/Documents/DUNE at CERN/FM_Integration/FM_Integration.runs/impl_1/top_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:47 ; elapsed = 00:00:28 . Memory (MB): peak = 2618.395 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+Command: report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/HP/Documents/DUNE at CERN/FM_Integration/FM_Integration.runs/impl_1/top_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:01:29 ; elapsed = 00:00:56 . Memory (MB): peak = 2665.957 ; gain = 47.563
+INFO: [runtcl-4] Executing : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+Command: report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/HP/Documents/DUNE at CERN/FM_Integration/FM_Integration.runs/impl_1/top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:41 ; elapsed = 00:00:27 . Memory (MB): peak = 2665.957 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
+Command: report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+633 Infos, 12 Warnings, 8 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:58 ; elapsed = 00:00:40 . Memory (MB): peak = 2671.805 ; gain = 5.848
+INFO: [runtcl-4] Executing : report_route_status -file top_route_status.rpt -pb top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+report_timing_summary: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2671.805 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_incremental_reuse -file top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file top_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2671.805 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file top_bus_skew_routed.rpt -pb top_bus_skew_routed.pb -rpx top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: write_bitstream -force top.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC RTSTAT-10] No routable loads: 50 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, vio_ep/inst/PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/probe_out0[0], vio_ep/inst/PROBE_OUT_ALL_INST/G_PROBE_OUT[2].PROBE_OUT0_INST/probe_out2[0], vio_ep/inst/PROBE_OUT_ALL_INST/G_PROBE_OUT[3].PROBE_OUT0_INST/probe_out3[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[0]... and (the first 15 of 48 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+Acceso denegado.
+Acceso denegado.
+INFO: [Common 17-83] Releasing license: Implementation
+12 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:02:55 ; elapsed = 00:02:45 . Memory (MB): peak = 3230.129 ; gain = 558.324
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 12 15:41:46 2022...
